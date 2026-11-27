@@ -86,7 +86,7 @@
     var code = $("loginCode").value;
     if (!name) { $("loginError").textContent = "Enter your name."; $("loginError").hidden = false; return; }
     if (code !== IRU_CONFIG.accessCode) {
-      $("loginError").textContent = "Wrong access code. Check with Shane at 980-550-5660.";
+      $("loginError").textContent = "Wrong access code. Check with your trainer.";
       $("loginError").hidden = false; return;
     }
     session.store = loadStore();

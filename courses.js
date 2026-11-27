@@ -92,7 +92,7 @@ var IRU_COURSES = [
 <li>The customer pays a <b>deposit</b> to place the order. The rest is due at install (or financed).</li>
 <li><b>The deposit is IronRidge's revenue.</b> The remaining balance goes to the manufacturer.</li>
 <li>There is no fixed deposit percentage — the amount shows on the Sensei quote as "Downpayment." Never quote a percentage.</li>
-<li><b>You earn 30% of the deposit</b>, paid bi-weekly on cleared deposits. A chargeback comes off your next payout.</li>
+<li><b>You earn 30% of the deposit</b>, paid bi-weekly on cleared deposits. Chargebacks are handled on a case-by-case basis.</li>
 <li><b>Bigger building = bigger deposit = bigger commission.</b> A 40×60 shop can pay several times what a small carport pays. Never under-size a buyer to make the number easier.</li>
 </ul>
 <figure>

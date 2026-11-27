@@ -132,6 +132,7 @@ h2 { font-size: 1.35rem; margin-bottom: 10px; }
 .course-header { display: flex; justify-content: space-between; gap: 26px; align-items: flex-end; margin: 14px 0 22px; flex-wrap: wrap; }
 .course-kicker { font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--red); }
 .course-progress-wrap { min-width: 230px; }
+.feedback-row { text-align: right; margin-bottom: 8px; }
 .course-progress-label { font-size: .78rem; color: var(--gray); margin-bottom: 5px; text-align: right; }
 .player-layout { display: grid; grid-template-columns: 285px 1fr; gap: 24px; align-items: start; }
 @media (max-width: 880px) { .player-layout { grid-template-columns: 1fr; } }
@@ -252,9 +253,27 @@ figure { margin: 0 0 16px; }
 .cert-sign-sub { font-size: .78rem; color: var(--gray); }
 .cert-actions { text-align: center; display: flex; gap: 12px; justify-content: center; }
 
-/* print */
+/* feedback */
+.modal-back:not([hidden]) {
+  position: fixed; inset: 0; z-index: 80;
+  background: rgba(26, 26, 26, .45);
+  display: flex; align-items: center; justify-content: center;
+  padding: 18px;
+}
+.modal {
+  background: #fff; border-radius: var(--radius); width: min(480px, 100%);
+  padding: 22px 22px 18px; box-shadow: 0 16px 40px rgba(0, 0, 0, .22);
+}
+.modal h3 { margin-bottom: 4px; }
+.modal textarea {
+  width: 100%; min-height: 120px; margin-top: 12px; font: inherit;
+  padding: 10px 12px; border: 1.5px solid var(--rule); border-radius: 9px; resize: vertical;
+}
+.modal textarea:focus { outline: 2px solid var(--red); border-color: var(--red); }
+.modal-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
+
 @media print {
-  .topbar, .cert-actions, #backBtn, .lesson-actions, .lesson-nav { display: none !important; }
+  .topbar, .cert-actions, #backBtn, .lesson-actions, .lesson-nav, .modal-back, .feedback-row { display: none !important; }
   body { background: #fff; }
   .certificate { border-color: var(--red); margin: 0; }
 }

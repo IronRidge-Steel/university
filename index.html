@@ -67,6 +67,7 @@
         <p id="courseDesc" class="muted"></p>
       </div>
       <div class="course-progress-wrap">
+        <div class="feedback-row"><button id="feedbackBtn" class="btn btn-ghost btn-sm" type="button" hidden>Send feedback</button></div>
         <div class="course-progress-label" id="courseProgressLabel"></div>
         <div class="progress-track"><div class="progress-fill" id="courseProgressFill"></div></div>
       </div>
@@ -119,6 +120,18 @@
       <button id="certBackBtn" class="btn btn-ghost">Back to courses</button>
     </div>
   </main>
+</div>
+
+<div id="feedbackModal" class="modal-back" hidden>
+  <div class="modal" role="dialog" aria-labelledby="feedbackTitle">
+    <h3 id="feedbackTitle">Send feedback</h3>
+    <p class="muted" id="feedbackContext"></p>
+    <textarea id="feedbackText" placeholder="What should we fix or add?"></textarea>
+    <div class="modal-actions">
+      <button id="feedbackCancel" class="btn btn-ghost" type="button">Cancel</button>
+      <button id="feedbackSend" class="btn btn-primary" type="button">Send</button>
+    </div>
+  </div>
 </div>
 
 <script src="courses.js"></script>

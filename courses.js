@@ -108,7 +108,6 @@ var IRU_COURSES = [
   <line x1="270" y1="56" x2="150" y2="93" stroke="#9E2A2B" stroke-width="2.5" marker-end="url(#arrR)"/>
   <line x1="370" y1="56" x2="500" y2="93" stroke="#999" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#arrG)"/>
   <text x="150" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#9E2A2B">30% → rep commission</text>
-  <text x="150" y="193" text-anchor="middle" font-size="12" fill="#555">70% → IronRidge (less fees)</text>
   <defs>
     <marker id="arrR" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#9E2A2B"/></marker>
     <marker id="arrG" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#999"/></marker>
